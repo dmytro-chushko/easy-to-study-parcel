@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./sass/styles.scss" />
+    <title>Easy to Study</title>
+  </head>
+  <body>
+    <include src="./elements/header.html"></include>
+    <main>
+      <!-- ================ HERO ================ -->
+      <include src="./elements/hero.html"></include>
+      <!-- ====================================== -->
+      <!-- ================ ADVANTAGES ================ -->
+      <include src="./elements/advantages.html"></include>
+      <!-- ============================================ -->
+      <!-- ================ MATERIALS ================ -->
+      <include src="./elements/materials.html"></include>
+      <!-- =========================================== -->
+      <!-- ================ TUTORIAL ================ -->
+      <include src="./elements/tutorial_one.html"></include>
+      <!-- ========================================== -->
+      <!-- ================ REPETITORS ================ -->
+      <include src="./elements/repetitors.html"></include>
+      <!-- ============================================ -->
+      <!-- ================ TUTORIAL 2 ================ -->
+      <include src="./elements/tutorial_two.html"></include>
+      <!-- ============================================ -->
+      <!-- ================ PROPOSAL ================ -->
+      <include src="./elements/proposal.html"></include>
+      <!-- ========================================== -->
+      <!-- ================ FAQ ================ -->
+      <include src="./elements/faq.html"></include>
+      <!-- ===================================== -->
+      <!-- =============== INFORMATIONAL SUPPORT =============== -->
+      <include src="./elements/support.html"></include>
+      <!-- ===================================================== -->
+    </main>
+    <!-- ==================== FOOTER ======================-->
+    <include src="./elements/footer.html"></include>
+    <!-- ================================================= -->
+    <script>
+      const aside = document.querySelector('aside');
+
+      aside.querySelector('.lang').classList.add('lang--mobile');
+      aside.querySelector('.lang__title').classList.add('lang__title--mobile');
+      aside.querySelector('.lang__content').classList.add('lang__content--mobile');
+      aside
+        .querySelectorAll('.lang__lable')
+        .forEach(lable => lable.classList.add('lang__lable--mobile'));
+    </script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

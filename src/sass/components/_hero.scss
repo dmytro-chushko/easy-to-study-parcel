@@ -1,0 +1,245 @@
+.hero {
+  padding-top: 21.33vw;
+  background-color: $primary-bgc;
+  
+  @media screen and (min-width: 768px) {
+    padding-top: 22.52vw;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 7.91vw;
+    padding-left: 7.08vw;
+  }
+
+  @media screen and (min-width: 1440px) {
+    &__wrapper {
+      display: flex;
+      padding-right: 7.36vw;
+    }
+
+    &__title-wrapper {
+      padding-top: 5.27vw;
+    }
+  }
+  
+  &__title {
+    position: relative;
+    margin-bottom: 3.46vw;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 9.6vw;
+    line-height: 1.12;
+    color: $head-title;
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 1.95vw;
+      
+      font-size: 6.25vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 25.48vw;
+      margin-right: auto;
+      margin-bottom: 1.04vw;
+
+      font-size: 3.33vw;
+      line-height: 1.12;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 72.26vw;
+      height: 1.7vw;
+      margin: 0 auto;
+
+      background-image: url(../images/decoration.svg);
+      background-size: cover;
+
+      @media screen and (min-width: 1440px) {
+        width: 25.48vw;
+        height: 0.56vw;
+      }
+    }
+  }
+
+  &__description {
+    width: 57vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 51.2vw;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 4.8vw;
+    line-height: 1.22;
+    color: $accent-color;
+
+    @media screen and (min-width: 768px) {
+      width: 65.62vw;
+      margin-bottom: 25.13vw;
+
+      font-size: 3.12vw;
+      line-height: 1.21;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 35.1vw;
+      margin-left: 0;
+      margin-right: auto;
+      margin-bottom: 0;
+
+      font-size: 1.67vw;
+    }
+  }
+
+  &__pic {
+    position: relative;
+
+    width: 100vw;
+    height: 95.73vw;
+    background-image: url(../images/owl.svg);
+    background-size: cover;
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      width: 68.82vw;
+      height: 64.09vw;
+      margin-left: auto;
+      background-image: url(../images/owl-tablet.svg);
+    }
+
+    @media screen and (min-width: 1440px) {
+            
+      width: 37.77vw;
+      height: 35.14vw;
+    }
+  }
+
+  &__circle {
+    
+    &--violet {
+      @include circle(18.9vw, 6.66vw, 15.46vw, 15.46vw);
+      background-color: $circle-violet;
+      
+      @media screen and (min-width: 768px) {
+        @include circle(21.09vw, 21.22vw, 10.02vw, 10.02vw);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include circle(12.08vw, 5.27vw, 5.34vw, 5.34vw);
+      }
+    }
+
+    &--pink {
+      @include circle(58.04vw, 60.2vw, 11.46vw, 11.46vw);
+      background-color: $circle-pink;
+
+      @media screen and (min-width: 768px) {
+        @include circle(55.46vw, 25.13vw, 3.64vw, 3.64vw);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include circle(32.29vw, 23.95vw, 1.94vw, 1.94vw);
+      }
+    }
+
+    &--turquoise {
+      @include circle(77.6vw, 25.33vw, 14.13vw, 14.13vw);
+      background-color: $circle-turquoise;
+      z-index: 1;
+
+      @media screen and (min-width: 768px) {
+        @include circle(36.19vw, 4.56vw, 5.46vw, 5.46vw);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include circle(34.23vw, 54.86vw, 2.91vw, 2.91vw);
+      }
+    }
+
+    &--yellow {
+      @include circle(103.73vw, 57.86vw, 7.46vw, 7.46vw);
+      background-color: $circle-yellow;
+      z-index: 1;
+
+      @media screen and (min-width: 768px) {
+        @include circle(76.95vw, 21.48vw, 5.46vw, 5.46vw);
+      }
+
+      @media screen and (min-width: 1440px) {
+        display: none;
+      }
+    }
+
+    &--main {
+      @include circle(81.33vw, -3.73vw, 107.46vw, 107.46vw);
+      background-image: linear-gradient(180deg, $gradient-start 0%, $gradient-end 100%);
+
+      @media screen and (min-width: 768px) {
+        @include circle(56.38vw, 48.69vw, 68.88vw, 68.88vw);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include circle(5.41vw, 57.8vw, 41.11vw, 41.11vw);
+      }
+    }
+  }
+
+  &__square {
+    
+    &--yellow-turquoise {
+      @include square(59.73vw, 1.33vw, 7.73vw, 7.73vw);
+      background-color: $square-yellow;
+
+      @media screen and (max-width: 767px) {
+        transform: rotate(-21.54deg);
+      }
+
+      @media screen and (min-width: 768px) {
+        @include square(41.66vw, 86.19vw, 7.68vw, 7.68vw);
+      background-color: $square-turquoise;
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include square(27.01vw, 7.08vw, 2.84vw, 2.84vw);
+      }
+    }
+
+    &--blue {
+      @include square(72.8vw, 91.5vw, 9.06vw, 9.06vw);
+      background-color: $square-blue;
+
+      @media screen and (max-width: 767px) {
+        transform: rotate(-21.54deg);
+      }
+
+      @media screen and (min-width: 768px) {
+        @include square(101.43vw, 7.442vw, 5.34vw, 5.34vw);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include square(15.07vw, 43.47vw, 4.09vw, 4.09vw);
+      }
+    }
+
+    &--pink {
+      @include square(113.8vw, 44.53vw, 4.64vw, 4.64vw);
+        background-color: $square-pink;
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+
+      @media screen and (max-width: 1439px) {
+        transform: rotate(31.14deg);
+      }
+
+      @media screen and (min-width: 1440px) {
+        @include square(4.51vw, 91.52vw, 3.75vw, 3.75vw);
+      }
+    }
+  }
+}
