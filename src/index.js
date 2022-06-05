@@ -1,5 +1,6 @@
 import onClickMenuButton from "./js/sidebar";
 import * as selectLang from "./js/select-lang";
+import SelectLangAPI from "./js/select-leng-api";
 
 // ------------------ SIDEBAR ------------------
 
@@ -7,26 +8,18 @@ onClickMenuButton();
 
 // ------------------ SELECT LANG ------------------
 
-const {
-  openOrCloseMenu,
-  rendersSelectLanguageMarkup,
-  onSelectLanguage, titleLang,
-  titleLangMobile,
-  lang,
-  langMobile,
-  langArr,
-  contentLang,
-  contentLangMobile
-} = selectLang;
+const langArr = ['ru', 'ua', 'en', 'pl'];
 
-// Desktop/Tab select language
+// desktop/tab var
+const descktopVar = {
+  langElement: document.querySelector('.lang'),
+  langTitle: document.querySelector('.lang__title'),
+  langContent: document.querySelector('.lang__content')
+}
 
-openOrCloseMenu(titleLang, lang);
-rendersSelectLanguageMarkup(langArr, contentLang, titleLang);
-onSelectLanguage(titleLang, contentLang, lang);
+// mmobile var
+const langMobile = document.querySelector('.lang--mobile');
+const titleLangMobile = document.querySelector('.lang__title--mobile');
+const contentLangMobile = document.querySelector('.lang__content--mobile');
 
-// Mobile select language
-
-openOrCloseMenu(titleLangMobile, langMobile);
-rendersSelectLanguageMarkup(langArr, contentLangMobile, titleLangMobile);
-onSelectLanguage(titleLangMobile, contentLangMobile, langMobile);
+new SelectLangAPI(langArr, descktopVar);

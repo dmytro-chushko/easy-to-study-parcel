@@ -7,8 +7,9 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel",
-    "build": "parcel build"
+    "start": "parcel",
+    "build": "parcel build --dist-dir github --public-url /easy-to-study-parcel/",
+    "deploy": "gh-pages -d github"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.5.0",
     "buffer": "^6.0.3",
+    "gh-pages": "^4.0.0",
     "parcel": "^2.5.0",
     "path-browserify": "^1.0.1",
     "posthtml-include": "^1.7.3",
