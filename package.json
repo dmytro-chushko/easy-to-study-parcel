@@ -2,7 +2,6 @@
   "name": "easy-to-study-parcel",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
@@ -22,15 +21,10 @@
     "url": "https://github.com/dmytro-chushko/easy-to-study-parcel/issues"
   },
   "homepage": "https://github.com/dmytro-chushko/easy-to-study-parcel#readme",
-  "dependencies": {},
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.5.0",
-    "buffer": "^6.0.3",
+    "@parcel/transformer-sass": "^2.6.0",
     "gh-pages": "^4.0.0",
-    "parcel": "^2.5.0",
-    "path-browserify": "^1.0.1",
-    "posthtml-include": "^1.7.3",
-    "process": "^0.11.10",
-    "vm-browserify": "^1.1.2"
+    "parcel": "^2.6.0",
+    "posthtml-include": "^1.7.4"
   }
 }

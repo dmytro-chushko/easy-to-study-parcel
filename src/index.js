@@ -1,5 +1,4 @@
 import onClickMenuButton from "./js/sidebar";
-import * as selectLang from "./js/select-lang";
 import SelectLangAPI from "./js/select-leng-api";
 
 // ------------------ SIDEBAR ------------------
@@ -18,8 +17,12 @@ const descktopVar = {
 }
 
 // mmobile var
-const langMobile = document.querySelector('.lang--mobile');
-const titleLangMobile = document.querySelector('.lang__title--mobile');
-const contentLangMobile = document.querySelector('.lang__content--mobile');
+const mobileVar = {
+  langElement: document.querySelector('.lang--mobile'),
+  langTitle: document.querySelector('.lang__title--mobile'),
+  langContent: document.querySelector('.lang__content--mobile')
+}
+
 
 new SelectLangAPI(langArr, descktopVar);
+new SelectLangAPI(langArr, mobileVar);
